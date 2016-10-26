@@ -6,10 +6,11 @@ import { NgTableFilteringDirective } from './table/ng-table-filtering.directive'
 import { NgTablePagingDirective } from './table/ng-table-paging.directive';
 import { NgTableSortingDirective } from './table/ng-table-sorting.directive';
 import { VisiblePipe } from '../pipes/VisiblePipe';
+import { AnyPipe } from '../pipes/AnyPipe';
 
 @NgModule({
   imports: [CommonModule],
-  declarations: [NgTableComponent, NgTableFilteringDirective, NgTablePagingDirective, NgTableSortingDirective, VisiblePipe],
+  declarations: [NgTableComponent, NgTableFilteringDirective, NgTablePagingDirective, NgTableSortingDirective, VisiblePipe, AnyPipe],
   exports: [NgTableComponent, NgTableFilteringDirective, NgTablePagingDirective, NgTableSortingDirective, VisiblePipe]
 })
 export class Ng2TableModule {
